@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/accent"
+        android:contentDescription="@string/app_name"
+        android:scaleType="center"
+        android:src="@drawable/ic_launcher" />
+    <EditText
+        android:id="@+id/dialog_name"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:hint="@string/name" />
+    <RelativeLayout
+    	android:orientation="horizontal"
+   		android:layout_width="wrap_content"
+   		android:layout_height="wrap_content">
+
+	    <EditText
+	        android:id="@+id/dialog_address"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginBottom="4dp"
+	        android:layout_marginLeft="4dp"
+	        android:layout_marginTop="16dp"
+	        android:layout_toLeftOf="@+id/imageButtonQr"
+	        android:gravity="left"
+	        android:hint="@string/address"
+	        android:inputType="text" />
+
+	    <ImageButton
+	        android:id="@+id/imageButtonQr"
+	        android:contentDescription="QR code"
+	        android:layout_alignParentRight="true"
+	        android:gravity="right"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/qr" />
+	</RelativeLayout>
+</LinearLayout><!-- From: file:/home/thezero/workspace/BitZero2/bitZero/src/main/res/layout/dialog_address.xml -->

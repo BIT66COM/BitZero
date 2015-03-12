@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BitZero</string>
+    
+    <string name="action_settings">Impostazioni</string>
+    <string name="action_about">Info su..</string>
+    
+    <string name="add_a">Aggiungi indirizzo</string>
+    <string name="address">Il tuo indirizzo</string>
+    <string name="name">Opzionale: Etichetta indirizzo</string>
+	<string name="add">Aggiungi</string>
+	<string name="edit">Modifica</string>
+    <string name="delete">Elimina</string>
+    <string name="show_qr">Visualizza codice QR</string>
+	<string name="cancel">Cancella</string>
+	<string name="close">Chiudi</string>
+	
+	<string name="btcaddress">BitCoin Address</string>
+	<string name="alabel">Etichetta</string>
+	
+	<string name="empty">Campo vuoto</string>
+	
+	<string name="empty_dialog">Errore, ci sono uno o più campi vuoti!</string>
+	
+	<string name="dialog_title_bitzero">BitZero</string>
+	<string name="dialog_msg_bitzero">Ricorda, BitZero non è BitCoin Wallet.
+	    Aggiungi un indirizzo Bitcoin per iniziare.</string>
+	<string name="dialog_title_uhost">Errore di rete</string>
+	<string name="dialog_msg_uhost">La rete non è disponibile.</string>
+	<string name="dialog_msg_ckconnection">Connessione fallita! Connettiti e riavvia BitZero</string>
+	
+	<string name="result_failed">Nessun QR code trovato</string>
+	<string name="result_failed_why">Hai annullato l\'operazione!</string>
+	<string name="result_succeeded">QR Code trovato</string>
+
+    <string name="disable_ads">Disabilita Pubblicità</string>
+
+    <string name="balance">Bilancio:</string>
+    <string name="transaction">Transazioni:</string>
+    <string name="addr">Indirizzo:</string>
+    <string name="no_connection">Nessuna connessione</string>
+
+    <string name="on_delete">Sei sicuro di eliminare questo elemento? (Puoi aggiungerlo di nuovo in seguito)</string>
+</resources>

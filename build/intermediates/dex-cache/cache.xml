@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/thezero/workspace/BitZero2/bitZero/build/intermediates/exploded-aar/BitZero2/FloatingActionBar2/unspecified/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="fee4b4de6dc3e32f944568ed40cde02c00987fad">
+        <dex dex="/home/thezero/workspace/BitZero2/bitZero/build/intermediates/pre-dexed/debug/classes-395cc79e7a325b8de2b9efb19f148de5af253d44.jar" />
+    </item>
+    <item
+        jar="/home/thezero/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/home/thezero/workspace/BitZero2/bitZero/build/intermediates/pre-dexed/debug/library-2.4.0-a54610460177107076104e38c35cb87bc8628d2f.jar" />
+    </item>
+    <item
+        jar="/home/thezero/workspace/BitZero2/bitZero/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
+        <dex dex="/home/thezero/workspace/BitZero2/bitZero/build/intermediates/pre-dexed/debug/classes-1b5695b793912f854067567fd661d8357a9f8735.jar" />
+    </item>
+    <item
+        jar="/home/thezero/workspace/BitZero2/bitZero/libs/android-integration-2.3.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3894aa8aacd412b9c8193e279bdef56f9735fb84">
+        <dex dex="/home/thezero/workspace/BitZero2/bitZero/build/intermediates/pre-dexed/debug/android-integration-2.3.0-6bdf011c2fb6257684e20180e7b63d4f30f346c1.jar" />
+    </item>
+    <item
+        jar="/opt/android-sdk-linux/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/home/thezero/workspace/BitZero2/bitZero/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-40229c4ebd1a9e37cea0a8ef7ceb1e5ba737fbd1.jar" />
+    </item>
+    <item
+        jar="/home/thezero/workspace/BitZero2/bitZero/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
+        <dex dex="/home/thezero/workspace/BitZero2/bitZero/build/intermediates/pre-dexed/debug/classes-1feb7eff7cf0e3dcaad9679f1a6be21c5a003715.jar" />
+    </item>
+    <item
+        jar="/home/thezero/workspace/BitZero2/bitZero/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/home/thezero/workspace/BitZero2/bitZero/build/intermediates/pre-dexed/debug/classes-9215c2af9366c5b84f9cc69bacc3a6e7bc9ec40f.jar" />
+    </item>
+    <item
+        jar="/home/thezero/workspace/BitZero2/bitZero/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/home/thezero/workspace/BitZero2/bitZero/build/intermediates/pre-dexed/debug/classes-4b23e097427e6a1d326dab5e676e161f0e15d18f.jar" />
+    </item>
+    <item
+        jar="/home/thezero/workspace/BitZero2/bitZero/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/home/thezero/workspace/BitZero2/bitZero/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-ee1253b2f6585fea100c706b87a63e7495198c52.jar" />
+    </item>
+
+</items>
