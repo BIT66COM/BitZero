@@ -2,6 +2,7 @@ package org.thezero.bitzero;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -11,6 +12,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -18,16 +20,18 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
+import com.jooik.tabbeddialog.fragments.FragmentDialog;
 import com.melnykov.fab.FloatingActionButton;
 
 import org.apache.http.HttpResponse;
@@ -219,7 +223,9 @@ public class MainActivity extends ActionBarActivity {
 
 		switch (id) {
 			case R.id.action_about:
-				/*.*/
+                FragmentManager fm = getSupportFragmentManager();
+                FragmentDialog overlay = new FragmentDialog();
+                overlay.show(fm, "FragmentDialog");
 				return true;
 
 			case R.id.ads:

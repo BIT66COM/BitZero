@@ -43,4 +43,29 @@
     <string name="no_connection">No internet connection</string>
 
     <string name="on_delete">Are you sure you want to delete this? (You can re-add it later anyways)</string>
+
+    <string name="pirate">Pirate!</string>
+    <string name="license">License</string>
+    <string name="me">Me</string>
+    <string name="about_content">"BitZero by Davide \"TheZero\" Silvetti (io@thezero.org) 2013
+
+You can download the source code Here: https://github.com/TheZ3ro/BitZero2
+
+WebSite: http://bitzero.thezero.org
+
+Feel Free, Be Free. :) "</string>
+    <string name="twitter">Twitter</string>
+    <string name="github">Github</string>
+    <string name="plus">Google+</string>
+
+    <string name="twitter_name">"@Th3Zer0"</string>
+    <string name="github_name">"@TheZ3ro"</string>
+    <string name="plus_name">+DavideTheZero</string>
+
+    <string name="l_icons">"SocialIcons\n by André Swanepoel"</string>
+    <string name="l_bicon">"Bitcoin Icon\n By TheNewgrade"</string>
+    <string name="l_lfab">"FloatingActionButton\n by @makovkastar"</string>
+    <string name="l_ltab1">"Android_Tabbed_Dialog\n by @kiteflo"</string>
+    <string name="l_ltab2">"PagerSlidingTabStrip\n by @jpardogo"</string>
+
 </resources>
