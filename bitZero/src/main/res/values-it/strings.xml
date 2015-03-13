@@ -15,6 +15,8 @@
     <string name="show_qr">Visualizza codice QR</string>
 	<string name="cancel">Cancella</string>
 	<string name="close">Chiudi</string>
+    <string name="copy">Copia Indirizzo</string>
+    <string name="copied">Indirizzo Copiato!</string>
 	
 	<string name="btcaddress">BitCoin Address</string>
 	<string name="alabel">Etichetta</string>

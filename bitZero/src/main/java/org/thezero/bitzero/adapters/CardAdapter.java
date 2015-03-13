@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
@@ -12,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.thezero.bitzero.EditActivity;
 import org.thezero.bitzero.MainActivity;
@@ -33,7 +35,8 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder>
     public CardAdapter( Context context , List<Address> a)
     {
         this.mContext = context;
-        this.address = a;
+        if(a!=null)
+            this.address = a;
     }
 
     @Override
@@ -48,13 +51,20 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder>
     {
         final Address p = address.get(i);
 
-        if(p.getValuta()==Address.Val[1][0]) {
+        viewHolder.mCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setClipboard(p.getAddress());
+            }
+        });
+
+        if(p.getValuta().equals(Address.Val[1][0])) {
             viewHolder.mValuta.setImageDrawable(mContext.getResources().getDrawable(R.drawable.icon_bitcoin));
-        }else if(p.getValuta()==Address.Val[1][1]) {
+        }else if(p.getValuta().equals(Address.Val[1][1])) {
             viewHolder.mValuta.setImageDrawable(mContext.getResources().getDrawable(R.drawable.icon_litecoin));
-        }else if(p.getValuta()==Address.Val[1][2]) {
+        }else if(p.getValuta().equals(Address.Val[1][2])) {
             viewHolder.mValuta.setImageDrawable(mContext.getResources().getDrawable(R.drawable.icon_dogecoin));
-        }else if(p.getValuta()==Address.Val[1][3]) {
+        }else if(p.getValuta().equals(Address.Val[1][3])) {
             viewHolder.mValuta.setImageDrawable(mContext.getResources().getDrawable(R.drawable.icon_zetacoin));
         }
 
@@ -62,13 +72,13 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder>
         viewHolder.mAddr.setText(mContext.getString(R.string.addr)+" " + p.getAddress());
 
         if(p.getBalance()>-1){
-            if(p.getValuta()==Address.Val[1][0]) {
+            if(p.getValuta().equals(Address.Val[1][0])) {
                 viewHolder.mBitcoin.setText(mContext.getString(R.string.balance)+" " + Address.toBTC(p.getBalance()) + " " + p.getValuta());
-            }else if(p.getValuta()==Address.Val[1][1]) {
+            }else if(p.getValuta().equals(Address.Val[1][1])) {
                 viewHolder.mBitcoin.setText(mContext.getString(R.string.balance)+" " + p.getBalance() + " " + p.getValuta());
-            }else if(p.getValuta()==Address.Val[1][2]) {
+            }else if(p.getValuta().equals(Address.Val[1][2])) {
                 viewHolder.mBitcoin.setText(mContext.getString(R.string.balance)+" " + p.getBalance() + " " + p.getValuta());
-            }else if(p.getValuta()==Address.Val[1][3]) {
+            }else if(p.getValuta().equals(Address.Val[1][3])) {
                 viewHolder.mBitcoin.setText(mContext.getString(R.string.balance)+" " + p.getBalance() + " " + p.getValuta());
             }
 
@@ -91,6 +101,9 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder>
                     case R.id.action3:
                         MainActivity.encodeBarcode("TEXT_TYPE", p.getValuta(true) + ":" + p.getAddress() + "?label=" + p.getName());
                         break;
+                    case R.id.action4:
+                        setClipboard(p.getAddress());
+                        break;
                     case R.id.action2:
                         AlertDialog.Builder altBx = new AlertDialog.Builder(mContext);
                         altBx.setMessage(mContext.getString(R.string.on_delete))
@@ -103,19 +116,29 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder>
                                 MainActivity.Refresh();
                             }
                         })
-                                .setNegativeButton(mContext.getString(R.string.cancel), new DialogInterface.OnClickListener()
-                        {
-                            public void onClick(DialogInterface dialog, int which)
-                            {
-                                dialog.dismiss();
-                            }
+                                .setNegativeButton(mContext.getString(R.string.cancel), new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        dialog.dismiss();
+                                    }
 
-                        }).show();
+                                }).show();
                         break;
                 }
                 return true;
             }
         });
+    }
+
+    private void setClipboard(String text) {
+        if(android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.HONEYCOMB) {
+            android.text.ClipboardManager clipboard = (android.text.ClipboardManager) mContext.getSystemService(Context.CLIPBOARD_SERVICE);
+            clipboard.setText(text);
+        } else {
+            android.content.ClipboardManager clipboard = (android.content.ClipboardManager) mContext.getSystemService(Context.CLIPBOARD_SERVICE);
+            android.content.ClipData clip = android.content.ClipData.newPlainText("Copied Text", text);
+            clipboard.setPrimaryClip(clip);
+        }
+        Toast.makeText(mContext, mContext.getString(R.string.copied), Toast.LENGTH_LONG).show();
     }
 
     public void add(Address item, int position) {
@@ -149,6 +172,7 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder>
         public TextView mBitcoin;
         public TextView mTx;
         public Toolbar mToolbar;
+        public CardView mCard;
 
         public ViewHolder( View v )
         {
@@ -159,6 +183,7 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder>
             mBitcoin = (TextView) v.findViewById(R.id.bitcoin);
             mTx = (TextView) v.findViewById(R.id.tx);
             mToolbar = (Toolbar) v.findViewById(R.id.toolbar2);
+            mCard = (CardView)v.findViewById(R.id.cardview);
 
             mToolbar.inflateMenu(R.menu.popup);
 
