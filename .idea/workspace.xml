@@ -43,11 +43,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bitZero/src/main/java/org/thezero/bitzero/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.185185" vertical-offset="1972" max-vertical-offset="6780">
-              <caret line="157" column="24" selection-start-line="157" selection-start-column="24" selection-end-line="157" selection-end-column="106" />
+            <state vertical-scroll-proportion="0.9182561" vertical-offset="3803" max-vertical-offset="6780">
+              <caret line="298" column="21" selection-start-line="295" selection-start-column="20" selection-end-line="298" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#4204#4231#0" expanded="true" />
@@ -68,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CardAdapter.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CardAdapter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bitZero/src/main/java/org/thezero/bitzero/adapters/CardAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.58583105" vertical-offset="1015" max-vertical-offset="2775">
-              <caret line="82" column="13" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="295" max-vertical-offset="2775">
+              <caret line="109" column="44" selection-start-line="109" selection-start-column="44" selection-end-line="109" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1461#1623#0" expanded="true" />
@@ -86,8 +86,8 @@
       <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bitZero/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.2" vertical-offset="105" max-vertical-offset="1185">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="50" />
+            <state vertical-scroll-proportion="-4.2" vertical-offset="690" max-vertical-offset="1185">
+              <caret line="53" column="46" selection-start-line="53" selection-start-column="46" selection-end-line="53" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -96,8 +96,8 @@
       <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bitZero/src/main/res/values-it/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.4" vertical-offset="85" max-vertical-offset="960">
-              <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+            <state vertical-scroll-proportion="-7.0" vertical-offset="605" max-vertical-offset="960">
+              <caret line="52" column="73" selection-start-line="52" selection-start-column="73" selection-end-line="52" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -1628,9 +1628,9 @@
         <option value="$PROJECT_DIR$/bitZero/src/main/res/layout/fragment_tab_2.xml" />
         <option value="$PROJECT_DIR$/bitZero/src/main/res/values/dimens.xml" />
         <option value="$PROJECT_DIR$/bitZero/src/main/res/menu/popup.xml" />
+        <option value="$PROJECT_DIR$/bitZero/src/main/java/org/thezero/bitzero/adapters/CardAdapter.java" />
         <option value="$PROJECT_DIR$/bitZero/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/bitZero/src/main/res/values-it/strings.xml" />
-        <option value="$PROJECT_DIR$/bitZero/src/main/java/org/thezero/bitzero/adapters/CardAdapter.java" />
       </list>
     </option>
   </component>
@@ -2604,10 +2604,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bitZero/src/main/res/menu/popup.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.67105263" vertical-offset="0" max-vertical-offset="380">
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+          <folding>
+            <element signature="e#227#241#0" expanded="false" />
+            <element signature="e#315#331#0" expanded="false" />
+            <element signature="e#405#422#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitZero/src/main/res/values-it/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.0" vertical-offset="605" max-vertical-offset="960">
+          <caret line="52" column="73" selection-start-line="52" selection-start-column="73" selection-end-line="52" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitZero/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.2" vertical-offset="690" max-vertical-offset="1185">
+          <caret line="53" column="46" selection-start-line="53" selection-start-column="46" selection-end-line="53" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitZero/src/main/java/org/thezero/bitzero/adapters/CardAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="295" max-vertical-offset="2775">
+          <caret line="109" column="44" selection-start-line="109" selection-start-column="44" selection-end-line="109" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1461#1623#0" expanded="true" />
+            <element signature="e#1612#1613#0" expanded="true" />
+            <element signature="e#6389#6424#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bitZero/src/main/java/org/thezero/bitzero/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.185185" vertical-offset="1972" max-vertical-offset="6780">
-          <caret line="157" column="24" selection-start-line="157" selection-start-column="24" selection-end-line="157" selection-end-column="106" />
+        <state vertical-scroll-proportion="0.9182561" vertical-offset="3803" max-vertical-offset="6780">
+          <caret line="298" column="21" selection-start-line="295" selection-start-column="20" selection-end-line="298" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#4204#4231#0" expanded="true" />
@@ -2623,47 +2664,6 @@
             <element signature="e#7680#7717#0" expanded="true" />
             <element signature="e#13264#13289#0" expanded="true" />
             <element signature="e#13306#13333#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitZero/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.2" vertical-offset="105" max-vertical-offset="1185">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitZero/src/main/res/values-it/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.4" vertical-offset="85" max-vertical-offset="960">
-          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitZero/src/main/res/menu/popup.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.67105263" vertical-offset="0" max-vertical-offset="380">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-          <folding>
-            <element signature="e#227#241#0" expanded="true" />
-            <element signature="e#315#331#0" expanded="true" />
-            <element signature="e#405#422#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitZero/src/main/java/org/thezero/bitzero/adapters/CardAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58583105" vertical-offset="1015" max-vertical-offset="2775">
-          <caret line="82" column="13" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1461#1623#0" expanded="true" />
-            <element signature="e#1612#1613#0" expanded="true" />
-            <element signature="e#6389#6424#0" expanded="true" />
           </folding>
         </state>
       </provider>
