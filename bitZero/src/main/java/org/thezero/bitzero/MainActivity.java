@@ -2,7 +2,6 @@ package org.thezero.bitzero;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -24,9 +23,7 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.zxing.integration.android.IntentIntegrator;
@@ -59,7 +56,6 @@ import java.util.Map;
 public class MainActivity extends ActionBarActivity {
 	
 	public static Map<String, String> addr = new HashMap<>();
-    //public static CardUI mCardView;
     public static AlertDialog idia;
     static MainActivity ma;
     public static FloatingActionButton fab;
@@ -67,7 +63,6 @@ public class MainActivity extends ActionBarActivity {
     private static SwipeRefreshLayout refreshLayout;
     private static CardAdapter cardAdapter;
     private List<Address> address = new ArrayList<>();
-
 
     @Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -215,6 +210,9 @@ public class MainActivity extends ActionBarActivity {
 				showDialog(R.string.result_failed, getString(R.string.result_failed_why));
 			}
 		}
+        if(!fab.isVisible()){
+            fab.show();
+        }
 	}
 
 	@Override
@@ -226,10 +224,6 @@ public class MainActivity extends ActionBarActivity {
                 FragmentManager fm = getSupportFragmentManager();
                 FragmentDialog overlay = new FragmentDialog();
                 overlay.show(fm, "FragmentDialog");
-				return true;
-
-			case R.id.ads:
-				//startActivity(new Intent(this,SettingsActivity.class));
 				return true;
 		}
 		return false;
@@ -256,7 +250,7 @@ public class MainActivity extends ActionBarActivity {
 	public void loadArray(Map<String,String> a){  
 	    SharedPreferences sp = getPreferences(Context.MODE_PRIVATE);
 	    a.clear();
-	    int sizea = sp.getInt("Address_size", 0);  
+	    int sizea = sp.getInt("Address_size", 0);
 
 	    for(int i=0;i<sizea;i++) 
 	    {
@@ -293,17 +287,13 @@ public class MainActivity extends ActionBarActivity {
 						e.printStackTrace();
 					}
 				}else if(val.equals(Address.Val[1][1])){
-					double received = Double.valueOf(request("http://explorer.litecoin.net/chain/Litecoin/q/getreceivedbyaddress/"+a));
-					double sent = Double.valueOf(request("http://explorer.litecoin.net/chain/Litecoin/q/getsentbyaddress/"+a));
-					// received - sent
-					coinAddr = new Address(Address.Val[1][1],l,a,-1,received-sent);
+                    double balance = Double.valueOf(request("http://explorer.litecoin.net/chain/Litecoin/q/addressbalance/"+a));
+                    coinAddr = new Address(Address.Val[1][1],l,a,-1,balance);
 				}else if(val.equals(Address.Val[1][2])){
 					double balance = Double.valueOf(request("http://dogechain.info/chain/Dogecoin/q/addressbalance/"+a));
-					// received - sent
 					coinAddr = new Address(Address.Val[1][2],l,a,-1,balance);
 				}else if(val.equals(Address.Val[1][3])){
-					double balance = Double.valueOf(request("http://bit.usr.sh:2750/chain/Zetacoin/q/addressbalance/"+a));
-					// received - sent
+					double balance = Double.valueOf(request("http://darkgamex.ch:2751/chain/Zetacoin/q/addressbalance/"+a));
 					coinAddr = new Address(Address.Val[1][3],l,a,-1,balance);
 				}
 				view();

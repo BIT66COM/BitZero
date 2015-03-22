@@ -49,13 +49,9 @@
     <string name="pirate">Pirate!</string>
     <string name="license">License</string>
     <string name="me">Me</string>
-    <string name="about_content">"BitZero by Davide \"TheZero\" Silvetti (io@thezero.org) 2013
 
-You can download the source code Here: https://github.com/TheZ3ro/BitZero
-
-WebSite: http://bitzero.thezero.org
-
-Feel Free, Be Free. :) "</string>
+    <string name="about_content">"BitZero by Davide \"TheZero\" Silvetti (io@thezero.org) 2013"</string>
+    <string name="about_source">"Source Code\nFeel Free, Be Free"</string>
     <string name="twitter">Twitter</string>
     <string name="github">Github</string>
     <string name="plus">Google+</string>
